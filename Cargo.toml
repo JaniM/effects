@@ -1,0 +1,13 @@
+[package]
+name = "effects"
+version = "0.1.0"
+authors = ["Jani Mustonen <janijohannes@kapsi.fi>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+lasso = "^0.2.2"
+logos = "0.11.4"
+petgraph = "0.5.1"
+

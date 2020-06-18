@@ -1,0 +1,16 @@
+
+
+(interface IO
+  (print (str text)))
+
+--                 arg          ret type
+(constfn prepender (str prefix) (effect IO (requires IO))
+  (effect IO (requires IO)
+    (print (str text)
+      ((super print) (+ prefix text))
+      (resume))))
+
+(fn main () ()
+  (with-effect (prepender "Hello ")
+    (print "foo")))
+
